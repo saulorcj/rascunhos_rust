@@ -1,5 +1,12 @@
 fn main() {
-    outra_funcao(5, 6);
+    let x = 5;
+
+    let y = {
+        let x = 3;
+        x + 1
+    };
+
+    println!("O valor de y é: {}", y);
 }
 
 fn outra_funcao(x: i32, y: i32) {
