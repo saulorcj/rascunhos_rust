@@ -1,9 +1,13 @@
 fn main() {
-    let numero = 3;
+    let numero = 6;
 
-    if numero < 5 {
-        println!("condição era verdadeira!");
+    if numero % 4 == 0 {
+        println!("número é divisível por 4");
+    } else if numero % 3 == 0 {
+        println!("número é divisível por 3");
+    } else if numero % 2 == 0 {
+        println!("número é divisível por 2");
     } else {
-        println!("condição era falsa");
+        println!("número não é divisível por 4, 3 ou 2");
     }
 }
